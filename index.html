@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>My Family Book</title>
+</head>
+<h1>My Family</h1>
+
+<body>
+    <h4 id="name"></h4>
+
+    <button onclick="update()">Next</button>
+    <img src="2.png" id="pic">
+<script>
+    
+    var family = ["dadi.jpg", "mom.png", "dad.jpg", "sis.jpg", "me.jpg"] ;
+    var names = ["Nirmal Kanta Virdi","Manpreet Kaur Virdi","Vikram Virdi","Aarya Virdi","Maanvi Virdi"] ;
+    
+    var m = 0;
+function update()
+{
+    
+    var infamily = 5
+    if(m > infamily )
+    {
+       m = 0;
+    }
+    var nextimg = family [m];
+    var nextname = names [m];
+    document.getElementById("pic").src = nextimg;
+    document.getElementById("name").innerHTML = nextname;
+    m++;
+}
+
+
+
+</script>
+</body>
+</html>
